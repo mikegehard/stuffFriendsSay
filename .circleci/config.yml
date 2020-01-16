@@ -43,6 +43,9 @@ jobs:
           path: build/test-results
 
   deploy:
+    docker:
+      - image: circleci/openjdk:11-jdk
+
     steps:
       - attach_workspace:
           at: build/libs
