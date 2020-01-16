@@ -43,7 +43,6 @@ jobs:
           path: build/test-results
 
   deploy:
-    executor: heroku/default
     steps:
       - attach_workspace:
           at: build/libs
