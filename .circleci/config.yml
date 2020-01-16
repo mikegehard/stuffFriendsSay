@@ -58,7 +58,7 @@ jobs:
       - run:
           name: "Deploy jar"
           command: |
-            heroku deploy:jar build/libs/stufffriendssay-*-all.jar --app shrouded-tor-17146
+            heroku deploy:jar build/libs/stufffriendssay-*-all.jar --app $HEROKU_APP_NAME
 
 workflows:
   version: 2
