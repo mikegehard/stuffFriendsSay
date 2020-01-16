@@ -26,4 +26,8 @@ jobs:
             - ~/.gradle
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
-      - run: ./gradlew build
+      - run: ./gradlew clean build
+
+      - store_artifacts:
+          path: build/libs
+          destination: stufffriendssay-*-all.jar
