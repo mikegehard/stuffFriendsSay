@@ -59,3 +59,12 @@ jobs:
           name: "Deploy jar"
           command: |
             heroku deploy:jar build/libs/stufffriendssay-*-all.jar --app shrouded-tor-17146
+
+workflows:
+  version: 2
+  stuffFriendsSay:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
