@@ -2,7 +2,11 @@
 #
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
-version: 2
+version: 2.1
+orbs:
+  heroku: circleci/heroku@0.0.10
+
+
 jobs:
   build:
     docker:
@@ -27,12 +31,31 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       - run:
-        name: "Build"
-        command: ./gradlew clean build
+          name: "Build"
+          command: ./gradlew clean build
 
-      - store_artifacts:
-          path: build/libs
-          destination: stufffriendssay-*-all.jar
+      - persist_to_workspace:
+          root: build/libs
+          paths:
+            - stufffriendssay-*-all.jar
 
       - store_test_results:
           path: build/test-results
+
+  deploy:
+    executor: heroku/default
+    steps:
+      - attach_workspace:
+          at: build/libs
+
+      - heroku/install
+
+      - run:
+          name: "Install java plugin"
+          command: |
+            heroku plugins:install java
+
+      - run:
+          name: "Deploy jar"
+          command: |
+            heroku deploy:jar build/libs/stufffriendssay-*-all.jar --app shrouded-tor-17146
