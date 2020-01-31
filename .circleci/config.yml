@@ -24,7 +24,7 @@ jobs:
             - v1-dependencies-{{ checksum "build.gradle" }}
 
       - run: cd applications/web
-        -
+
       - run: ./gradlew dependencies
 
       - save_cache:
