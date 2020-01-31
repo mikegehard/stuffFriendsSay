@@ -34,15 +34,15 @@ jobs:
 
       - run:
           name: "Build"
-          command: ./gradlew clean build
+          command: cd applications/web && ./gradlew clean build
 
       - persist_to_workspace:
-          root: build/libs
+          root: applications/web/build/libs
           paths:
             - stufffriendssay-*-all.jar
 
       - store_test_results:
-          path: build/test-results
+          path: applications/web/build/test-results
 
   deployWebApp:
     docker:
@@ -50,7 +50,7 @@ jobs:
 
     steps:
       - attach_workspace:
-          at: build/libs
+          at: applications/web/build/libs
 
       - heroku/install
 
@@ -62,7 +62,7 @@ jobs:
       - run:
           name: "Deploy jar"
           command: |
-            heroku deploy:jar build/libs/stufffriendssay-*-all.jar --app $HEROKU_APP_NAME
+            heroku deploy:jar applications/web/build/libs/stufffriendssay-*-all.jar --app $HEROKU_APP_NAME
 
 workflows:
   version: 2
