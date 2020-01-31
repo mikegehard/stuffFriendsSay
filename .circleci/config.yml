@@ -19,11 +19,11 @@ jobs:
     steps:
       - checkout
 
+      - run: cd applications/web
+
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "build.gradle" }}
-
-      - run: cd applications/web
 
       - run: ./gradlew dependencies
 
