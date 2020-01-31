@@ -34,7 +34,7 @@ jobs:
 
       - run:
           name: "Build"
-          command: cd applications/web && ./gradlew clean build
+          command: ./gradlew :applications:web:clean :applications:web:build
 
       - persist_to_workspace:
           root: applications/web/build/libs
