@@ -15,7 +15,7 @@ class ApplicationTest {
         withTestApplication({ module() }) {
             handleRequest(HttpMethod.Get, "/").apply {
                 assertEquals(HttpStatusCode.OK, response.status())
-                assertTrue(response.content!!.contains("HELLO WORLD!"))
+                assertTrue(response.content!!.contains("Why are you here?"))
             }
         }
     }

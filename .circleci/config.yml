@@ -8,7 +8,7 @@ orbs:
 
 
 jobs:
-  build:
+  buildWebApp:
     docker:
       - image: circleci/openjdk:11-jdk
 
@@ -23,6 +23,8 @@ jobs:
           keys:
             - v1-dependencies-{{ checksum "build.gradle" }}
 
+      - run: cd applications/web
+        -
       - run: ./gradlew dependencies
 
       - save_cache:
@@ -42,7 +44,7 @@ jobs:
       - store_test_results:
           path: build/test-results
 
-  deploy:
+  deployWebApp:
     docker:
       - image: circleci/openjdk:11-jdk
 
@@ -66,7 +68,7 @@ workflows:
   version: 2
   stuffFriendsSay:
     jobs:
-      - build
-      - deploy:
+      - buildWebApp
+      - deployWebApp:
           requires:
-            - build
+            - buildWebApp

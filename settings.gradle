@@ -1,1 +1,3 @@
 rootProject.name = "stufffriendssay"
+
+include "applications:web"
