@@ -11,11 +11,11 @@ object Pages {
     fun homePage(): HtmlContent =
         HtmlContent(HttpStatusCode.OK) {
             head {
-                title { +"Async World" }
+                title { +"Stuff Friends Say" }
             }
             body {
                 h1 {
-                    +"HELLO WORLD!!!!"
+                    +"Why are you here?"
                 }
             }
         }
