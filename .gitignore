@@ -1,7 +1,14 @@
-/.gradle
-/.idea
+.gradle
+.idea
 out
 build
 *.iml
 *.ipr
 *.iws
+
+
+local.properties
+.DS_Store
+captures
+.externalNativeBuild
+.cxx

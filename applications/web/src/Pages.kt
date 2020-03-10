@@ -8,14 +8,14 @@ import kotlinx.html.head
 import kotlinx.html.title
 
 object Pages {
-    fun homePage(): HtmlContent =
+    fun homePage(message: String): HtmlContent =
         HtmlContent(HttpStatusCode.OK) {
             head {
                 title { +"Stuff Friends Say" }
             }
             body {
                 h1 {
-                    +"Why are you here?"
+                    +message
                 }
             }
         }
