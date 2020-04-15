@@ -1,6 +1,7 @@
 package dev.rubbersidedowntech.stufffriendssay
 
 import com.fasterxml.jackson.databind.SerializationFeature
+import dev.rubbersidedowntech.stufffriendssay.messages.hello
 import io.ktor.application.Application
 import io.ktor.application.call
 import io.ktor.application.install
@@ -39,7 +40,7 @@ fun Application.module() {
 
     routing {
         get("/") {
-            call.respond(Pages.homePage("Hello world!"))
+            call.respond(Pages.homePage(hello()))
         }
 
         // Static feature. Try to access `/static/ktor_logo.svg`
