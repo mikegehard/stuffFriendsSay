@@ -27,6 +27,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":components:messages"))
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation("androidx.appcompat:appcompat:$android_x_version")
