@@ -15,9 +15,18 @@ You will need both IntelliJ, with Android plugin, and Xcode for development.
 Android, shared and server development will use IntelliJ and iOS UI
 development will be done in Xcode.
 
+## Cocoa pods and Kotlin Multiplatform
+
+https://github.com/touchlab/KaMPKit/blob/master/docs/IOS_PROJ_INTEGRATION.md
+
+
 ## Autoreload in Ktor (currently broken)  
 
 You can use Ktor autoreload to reload the site on code changes:
 https://ktor.io/servers/autoreload.html#recompiling-automatically-on-source-changes
 
 When following these instructions, use `./gradlew` instead of `gradle`.
+
+# Resourcese
+
+- TouchLab's [KaMP Kit](https://github.com/touchlab/KaMPKit)
