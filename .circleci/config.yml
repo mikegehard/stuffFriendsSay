@@ -19,18 +19,16 @@ jobs:
     steps:
       - checkout
 
-      - run: cd applications/web
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ md5 -q "applications/web/build.gradle.kts" }}
 
-#      - restore_cache:
-#          keys:
-#            - v1-dependencies-{{ checksum "build.gradle.kts" }}
+      - run: ./gradlew :applications:web:dependencies
 
-#      - run: ./gradlew dependencies
-
-#      - save_cache:
-#          paths:
-#            - ~/.gradle
-#          key: v1-dependencies-{{ checksum "build.gradle.kts" }}
+      - save_cache:
+          paths:
+            - ~/.gradle
+          key: v1-dependencies-{{ md5 -q "applications/web/build.gradle.kts" }}
 
       - run:
           name: "Build"
