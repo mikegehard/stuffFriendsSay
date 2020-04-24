@@ -25,9 +25,6 @@ plugins {
 
 group = "dev.rubbersidedowntech"
 
-val gitVersion: groovy.lang.Closure<*> by extra
-version = gitVersion()
-
 sourceSets {
     main {
         resources.srcDir("resources")
@@ -59,25 +56,22 @@ dependencies {
     testImplementation("io.ktor:ktor-server-tests:${Versions.ktor}")
 }
 
-val foo = "io.ktor.server.netty.EngineMain"
+val ktorMainClassName = "io.ktor.server.netty.EngineMain"
 
 application {
-    mainClassName = foo
+    mainClassName = ktorMainClassName
 }
+
+val gitVersion: groovy.lang.Closure<*> by extra
 
 tasks {
     named<ShadowJar>("shadowJar") {
         manifest {
-            attributes(mapOf("Main-Class" to foo))
+            attributes(mapOf("Main-Class" to ktorMainClassName))
         }
+        archiveBaseName.set("stufffriendssay-web-${gitVersion()}")
     }
 }
-
-//shadowJar {
-//    manifest {
-//        attributes = "Main-Class:$mainClassName"
-//    }
-//}
 
 tasks.test {
     testLogging {

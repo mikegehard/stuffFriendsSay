@@ -37,7 +37,7 @@ jobs:
       - persist_to_workspace:
           root: applications/web/build/libs
           paths:
-            - stufffriendssay-*-all.jar
+            - stufffriendssay-web-*-all.jar
 
       - store_test_results:
           path: applications/web/build/test-results
