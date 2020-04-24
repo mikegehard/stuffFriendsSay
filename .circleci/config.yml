@@ -23,14 +23,14 @@ jobs:
 
 #      - restore_cache:
 #          keys:
-#            - v1-dependencies-{{ checksum "build.gradle" }}
+#            - v1-dependencies-{{ checksum "build.gradle.kts" }}
 
 #      - run: ./gradlew dependencies
 
 #      - save_cache:
 #          paths:
 #            - ~/.gradle
-#          key: v1-dependencies-{{ checksum "build.gradle" }}
+#          key: v1-dependencies-{{ checksum "build.gradle.kts" }}
 
       - run:
           name: "Build"
