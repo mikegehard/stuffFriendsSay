@@ -34,18 +34,16 @@ kotlin {
         target = "StuffFriendsSay"
     }
 
-    val kotlinVersion = "1.3.61"
-
     sourceSets["commonMain"].dependencies {
-        implementation(kotlin("stdlib-common", kotlinVersion))
+        implementation(kotlin("stdlib-common", Versions.kotlin))
     }
 
     sourceSets["androidMain"].dependencies {
-        implementation(kotlin("stdlib", kotlinVersion))
+        implementation(kotlin("stdlib", Versions.kotlin))
     }
 
     sourceSets["jvmMain"].dependencies {
-        implementation(kotlin("stdlib", kotlinVersion))
+        implementation(kotlin("stdlib", Versions.kotlin))
     }
 
 

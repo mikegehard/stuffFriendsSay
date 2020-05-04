@@ -1,7 +1,7 @@
 package dev.rubbersidedowntech.stufffriendssay
 
 import com.fasterxml.jackson.databind.SerializationFeature
-import dev.rubbersidedowntech.stufffriendssay.messages.hello
+import dev.rubbersidedowntech.stufffriendssay.greetings.hello
 import io.ktor.application.Application
 import io.ktor.application.call
 import io.ktor.application.install

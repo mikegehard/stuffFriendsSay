@@ -27,7 +27,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":components:messages"))
+    implementation(project(":components:greetings"))
     implementation(fileTree(mapOf("include" to listOf("*.jar"), "dir" to "libs")))
     implementation(fileTree(mapOf("include" to listOf("*.jar"), "dir" to "libs")))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}")

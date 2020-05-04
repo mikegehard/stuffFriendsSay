@@ -45,7 +45,7 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":components:messages"))
+    implementation(project(":components:greetings"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}")
     implementation("io.ktor:ktor-server-netty:${Versions.ktor}")
     implementation("ch.qos.logback:logback-classic:${Versions.logback}")

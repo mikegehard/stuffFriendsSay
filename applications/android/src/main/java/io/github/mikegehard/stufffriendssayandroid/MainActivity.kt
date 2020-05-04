@@ -3,7 +3,7 @@ package io.github.mikegehard.stufffriendssay.android
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import dev.rubbersidedowntech.stufffriendssay.messages.hello
+import dev.rubbersidedowntech.stufffriendssay.greetings.hello
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,3 +1,5 @@
 package dev.rubbersidedowntech.stufffriendssay.messages
 
-actual fun hello(): String = "Hello from JVM!"
+expect object Platform {
+    val name: String
+}

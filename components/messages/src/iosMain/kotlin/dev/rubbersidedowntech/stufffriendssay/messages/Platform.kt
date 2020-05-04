@@ -1,3 +1,5 @@
 package dev.rubbersidedowntech.stufffriendssay.messages
 
-actual fun hello(): String = "Hello from iOS!"
+actual object Platform {
+    actual val name = "iOS"
+}
