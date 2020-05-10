@@ -1,0 +1,4 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/goodbyes.framework
+${DWARF_DSYM_FOLDER_PATH}/goodbyes.framework.dSYM
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/greetings.framework
+${DWARF_DSYM_FOLDER_PATH}/greetings.framework.dSYM

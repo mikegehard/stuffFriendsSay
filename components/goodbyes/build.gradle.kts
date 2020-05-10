@@ -2,21 +2,12 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 plugins {
     kotlin("multiplatform")
-    id("com.android.library")
-}
-
-android {
-    compileSdkVersion(28)
-    defaultConfig {
-        versionCode = 1
-        versionName = "1.0"
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
+    id("co.touchlab.native.cocoapods")
 }
 
 kotlin {
-    android()
     jvm()
+
     //Revert to just ios() when gradle plugin can properly resolve it
     val onPhone = System.getenv("SDK_NAME")?.startsWith("iphoneos") ?: false
     if (onPhone) {
@@ -28,15 +19,16 @@ kotlin {
 
     version = "1.0"
 
+    cocoapodsext {
+        summary = "Goodbyes library for Stuff Friends Say"
+        homepage = "https://github.com/mikegehard/stuffFriendsSay"
+        framework {
+            isStatic = false
+        }
+    }
+
     sourceSets["commonMain"].dependencies {
-        implementation(kotlin("stdlib-common", Versions.kotlin))
-    }
-
-    sourceSets["androidMain"].dependencies {
-        implementation(kotlin("stdlib", Versions.kotlin))
-    }
-
-    sourceSets["jvmMain"].dependencies {
+        implementation(project(":components:platforms"))
         implementation(kotlin("stdlib", Versions.kotlin))
     }
 }

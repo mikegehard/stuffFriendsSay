@@ -26,6 +26,10 @@ https://github.com/touchlab/KaMPKit/blob/master/docs/IOS_PROJ_INTEGRATION.md
    ```
 3. Install cocoapods via `gem install cocoapods`.
 
+Looks like there is some strange behavior around multiple KotlinNative
+frameworks in one iOS proejct?
+https://stackoverflow.com/questions/61469574/how-to-add-two-or-more-kotlin-native-modules-on-an-ios-project
+
 
 ## Autoreload in Ktor (currently broken)  
 

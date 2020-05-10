@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-StuffFriendsSay/Pods-StuffFriendsSay-frameworks.sh
+${PODS_ROOT}/../../../components/goodbyes/build/cocoapods/framework/goodbyes.framework
+${PODS_ROOT}/../../../components/goodbyes/build/cocoapods/framework/goodbyes.framework.dSYM
+${PODS_ROOT}/../../../components/greetings/build/cocoapods/framework/greetings.framework
+${PODS_ROOT}/../../../components/greetings/build/cocoapods/framework/greetings.framework.dSYM

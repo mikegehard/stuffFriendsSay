@@ -1,14 +1,14 @@
 Pod::Spec.new do |spec|
-    spec.name                     = 'platforms'
+    spec.name                     = 'goodbyes'
     spec.version                  = '1.0'
     spec.homepage                 = 'https://github.com/mikegehard/stuffFriendsSay'
     spec.source                   = { :git => "Not Published", :tag => "Cocoapods/#{spec.name}/#{spec.version}" }
     spec.authors                  = ''
     spec.license                  = ''
-    spec.summary                  = 'Platforms library for Stuff Friends Say'
+    spec.summary                  = 'Goodbyes library for Stuff Friends Say'
 
     spec.static_framework         = true
-    spec.vendored_frameworks      = "build/cocoapods/framework/platforms.framework"
+    spec.vendored_frameworks      = "build/cocoapods/framework/goodbyes.framework"
     spec.libraries                = "c++"
     spec.module_name              = "#{spec.name}_umbrella"
 
@@ -26,13 +26,13 @@ Pod::Spec.new do |spec|
 
     spec.script_phases = [
         {
-            :name => 'Build platforms',
+            :name => 'Build goodbyes',
             :execution_position => :before_compile,
             :shell_path => '/bin/sh',
             :script => <<-SCRIPT
                 set -ev
                 REPO_ROOT="$PODS_TARGET_SRCROOT"
-                "$REPO_ROOT/../../gradlew" -p "$REPO_ROOT" :components:platforms:syncFramework \
+                "$REPO_ROOT/../../gradlew" -p "$REPO_ROOT" :components:goodbyes:syncFramework \
                     -Pkotlin.native.cocoapods.target=$KOTLIN_TARGET \
                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION \
                     -Pkotlin.native.cocoapods.cflags="$OTHER_CFLAGS" \
@@ -41,7 +41,7 @@ Pod::Spec.new do |spec|
             SCRIPT
         },
         {
-        	:name => 'Touch platforms.framework',
+        	:name => 'Touch goodbyes.framework',
         	:execution_position => :after_compile,
         	:shell_path =>  '/bin/sh',
         	:script => 'find "${SRCROOT}" -type f -name *frameworks.sh -exec bash -c "touch \"{}\"" \;'

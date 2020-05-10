@@ -7,11 +7,13 @@
 //
 
 import SwiftUI
-import platforms
+import greetings
+import goodbyes
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, from \(Platform().name)")
+        Text("\(GreetingsKt.hello())\n\n\(GoodbyesKt.goodbye())")
+        
     }
 }
 

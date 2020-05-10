@@ -7,59 +7,82 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		C9B77BE0B53297768472F8258C3E6A7B /* platforms */ = {
+		9CB2139A04AA5C8FF48BC1A7FFD33C39 /* greetings */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 46EB2E00000120 /* Build configuration list for PBXAggregateTarget "platforms" */;
+			buildConfigurationList = 46EB2E000001E0 /* Build configuration list for PBXAggregateTarget "greetings" */;
 			buildPhases = (
-				46EB2E000002F0 /* [CP-User] Build platforms */,
-				46EB2E00000300 /* [CP-User] Touch platforms.framework */,
+				46EB2E000003E0 /* [CP-User] Build greetings */,
+				46EB2E000003F0 /* [CP-User] Touch greetings.framework */,
 			);
 			dependencies = (
 			);
-			name = platforms;
+			name = greetings;
+		};
+		F62FA2A50D3BBA60BBC43BE9E029EFBA /* goodbyes */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 46EB2E00000170 /* Build configuration list for PBXAggregateTarget "goodbyes" */;
+			buildPhases = (
+				46EB2E000003C0 /* [CP-User] Build goodbyes */,
+				46EB2E000003D0 /* [CP-User] Touch goodbyes.framework */,
+			);
+			dependencies = (
+			);
+			name = goodbyes;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		46EB2E00000230 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000220 /* Foundation.framework */; };
-		46EB2E000002A0 /* Pods-StuffFriendsSay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00000290 /* Pods-StuffFriendsSay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E000002E0 /* Pods-StuffFriendsSay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000002D0 /* Pods-StuffFriendsSay-dummy.m */; };
+		46EB2E000002F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E000002E0 /* Foundation.framework */; };
+		46EB2E00000360 /* Pods-StuffFriendsSay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00000350 /* Pods-StuffFriendsSay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E000003B0 /* Pods-StuffFriendsSay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000003A0 /* Pods-StuffFriendsSay-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46EB2E00000310 /* PBXContainerItemProxy */ = {
+		46EB2E00000400 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C9B77BE0B53297768472F8258C3E6A7B;
-			remoteInfo = platforms;
+			remoteGlobalIDString = F62FA2A50D3BBA60BBC43BE9E029EFBA;
+			remoteInfo = goodbyes;
+		};
+		46EB2E00000420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EB2E00000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CB2139A04AA5C8FF48BC1A7FFD33C39;
+			remoteInfo = greetings;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46EB2E000000C0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E000000E0 /* platforms.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = platforms.framework; path = build/cocoapods/framework/platforms.framework; sourceTree = "<group>"; };
-		46EB2E00000100 /* platforms.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = platforms.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E00000160 /* platforms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = platforms.debug.xcconfig; sourceTree = "<group>"; };
-		46EB2E00000170 /* platforms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = platforms.release.xcconfig; sourceTree = "<group>"; };
-		46EB2E00000220 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		46EB2E00000250 /* Pods-StuffFriendsSay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StuffFriendsSay.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00000260 /* Pods-StuffFriendsSay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StuffFriendsSay.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00000270 /* Pods-StuffFriendsSay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StuffFriendsSay-Info.plist"; sourceTree = "<group>"; };
-		46EB2E00000280 /* Pods-StuffFriendsSay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StuffFriendsSay.modulemap"; sourceTree = "<group>"; };
-		46EB2E00000290 /* Pods-StuffFriendsSay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StuffFriendsSay-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E000002B0 /* Pods-StuffFriendsSay-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StuffFriendsSay-acknowledgements.plist"; sourceTree = "<group>"; };
-		46EB2E000002C0 /* Pods-StuffFriendsSay-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StuffFriendsSay-acknowledgements.markdown"; sourceTree = "<group>"; };
-		46EB2E000002D0 /* Pods-StuffFriendsSay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StuffFriendsSay-dummy.m"; sourceTree = "<group>"; };
+		46EB2E000000D0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E000000F0 /* goodbyes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = goodbyes.framework; path = build/cocoapods/framework/goodbyes.framework; sourceTree = "<group>"; };
+		46EB2E00000110 /* greetings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = greetings.framework; path = build/cocoapods/framework/greetings.framework; sourceTree = "<group>"; };
+		46EB2E00000130 /* goodbyes.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = goodbyes.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00000150 /* greetings.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = greetings.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E000001B0 /* goodbyes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = goodbyes.debug.xcconfig; sourceTree = "<group>"; };
+		46EB2E000001C0 /* goodbyes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = goodbyes.release.xcconfig; sourceTree = "<group>"; };
+		46EB2E00000220 /* greetings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = greetings.debug.xcconfig; sourceTree = "<group>"; };
+		46EB2E00000230 /* greetings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = greetings.release.xcconfig; sourceTree = "<group>"; };
+		46EB2E000002E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		46EB2E00000310 /* Pods-StuffFriendsSay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StuffFriendsSay.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00000320 /* Pods-StuffFriendsSay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StuffFriendsSay.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00000330 /* Pods-StuffFriendsSay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StuffFriendsSay-Info.plist"; sourceTree = "<group>"; };
+		46EB2E00000340 /* Pods-StuffFriendsSay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StuffFriendsSay.modulemap"; sourceTree = "<group>"; };
+		46EB2E00000350 /* Pods-StuffFriendsSay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StuffFriendsSay-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E00000370 /* Pods-StuffFriendsSay-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StuffFriendsSay-frameworks.sh"; sourceTree = "<group>"; };
+		46EB2E00000380 /* Pods-StuffFriendsSay-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StuffFriendsSay-acknowledgements.plist"; sourceTree = "<group>"; };
+		46EB2E00000390 /* Pods-StuffFriendsSay-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StuffFriendsSay-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46EB2E000003A0 /* Pods-StuffFriendsSay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StuffFriendsSay-dummy.m"; sourceTree = "<group>"; };
 		A6CA204D49DE489CD96DF7894378F77F /* Pods_StuffFriendsSay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StuffFriendsSay.framework; path = "Pods-StuffFriendsSay.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		46EB2E000001F0 /* Frameworks */ = {
+		46EB2E000002B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000230 /* Foundation.framework in Frameworks */,
+				46EB2E000002F0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +92,7 @@
 		46EB2E00000010 = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000000C0 /* Podfile */,
+				46EB2E000000D0 /* Podfile */,
 				46EB2E00000090 /* Development Pods */,
 				46EB2E00000060 /* Frameworks */,
 				46EB2E00000020 /* Products */,
@@ -88,7 +111,7 @@
 		46EB2E00000060 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000210 /* iOS */,
+				46EB2E000002D0 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,7 +119,7 @@
 		46EB2E00000070 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000240 /* Pods-StuffFriendsSay */,
+				46EB2E00000300 /* Pods-StuffFriendsSay */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -104,67 +127,106 @@
 		46EB2E00000090 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000000B0 /* platforms */,
+				46EB2E000000B0 /* goodbyes */,
+				46EB2E000000C0 /* greetings */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		46EB2E000000B0 /* platforms */ = {
+		46EB2E000000B0 /* goodbyes */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000000D0 /* Frameworks */,
-				46EB2E000000F0 /* Pod */,
-				46EB2E00000150 /* Support Files */,
+				46EB2E000000E0 /* Frameworks */,
+				46EB2E00000120 /* Pod */,
+				46EB2E000001A0 /* Support Files */,
 			);
-			name = platforms;
-			path = ../../../components/platforms;
+			name = goodbyes;
+			path = ../../../components/goodbyes;
 			sourceTree = "<group>";
 		};
-		46EB2E000000D0 /* Frameworks */ = {
+		46EB2E000000C0 /* greetings */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000000E0 /* platforms.framework */,
+				46EB2E00000100 /* Frameworks */,
+				46EB2E00000140 /* Pod */,
+				46EB2E00000210 /* Support Files */,
+			);
+			name = greetings;
+			path = ../../../components/greetings;
+			sourceTree = "<group>";
+		};
+		46EB2E000000E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46EB2E000000F0 /* goodbyes.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		46EB2E000000F0 /* Pod */ = {
+		46EB2E00000100 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000100 /* platforms.podspec */,
+				46EB2E00000110 /* greetings.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46EB2E00000120 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				46EB2E00000130 /* goodbyes.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		46EB2E00000150 /* Support Files */ = {
+		46EB2E00000140 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000160 /* platforms.debug.xcconfig */,
-				46EB2E00000170 /* platforms.release.xcconfig */,
+				46EB2E00000150 /* greetings.podspec */,
 			);
-			name = "Support Files";
-			path = "../../applications/ios/Pods/Target Support Files/platforms";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		46EB2E00000210 /* iOS */ = {
+		46EB2E000001A0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000220 /* Foundation.framework */,
+				46EB2E000001B0 /* goodbyes.debug.xcconfig */,
+				46EB2E000001C0 /* goodbyes.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../applications/ios/Pods/Target Support Files/goodbyes";
+			sourceTree = "<group>";
+		};
+		46EB2E00000210 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46EB2E00000220 /* greetings.debug.xcconfig */,
+				46EB2E00000230 /* greetings.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../applications/ios/Pods/Target Support Files/greetings";
+			sourceTree = "<group>";
+		};
+		46EB2E000002D0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				46EB2E000002E0 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		46EB2E00000240 /* Pods-StuffFriendsSay */ = {
+		46EB2E00000300 /* Pods-StuffFriendsSay */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000280 /* Pods-StuffFriendsSay.modulemap */,
-				46EB2E000002C0 /* Pods-StuffFriendsSay-acknowledgements.markdown */,
-				46EB2E000002B0 /* Pods-StuffFriendsSay-acknowledgements.plist */,
-				46EB2E000002D0 /* Pods-StuffFriendsSay-dummy.m */,
-				46EB2E00000270 /* Pods-StuffFriendsSay-Info.plist */,
-				46EB2E00000290 /* Pods-StuffFriendsSay-umbrella.h */,
-				46EB2E00000260 /* Pods-StuffFriendsSay.debug.xcconfig */,
-				46EB2E00000250 /* Pods-StuffFriendsSay.release.xcconfig */,
+				46EB2E00000340 /* Pods-StuffFriendsSay.modulemap */,
+				46EB2E00000390 /* Pods-StuffFriendsSay-acknowledgements.markdown */,
+				46EB2E00000380 /* Pods-StuffFriendsSay-acknowledgements.plist */,
+				46EB2E000003A0 /* Pods-StuffFriendsSay-dummy.m */,
+				46EB2E00000370 /* Pods-StuffFriendsSay-frameworks.sh */,
+				46EB2E00000330 /* Pods-StuffFriendsSay-Info.plist */,
+				46EB2E00000350 /* Pods-StuffFriendsSay-umbrella.h */,
+				46EB2E00000320 /* Pods-StuffFriendsSay.debug.xcconfig */,
+				46EB2E00000310 /* Pods-StuffFriendsSay.release.xcconfig */,
 			);
 			name = "Pods-StuffFriendsSay";
 			path = "Target Support Files/Pods-StuffFriendsSay";
@@ -173,11 +235,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		46EB2E000001D0 /* Headers */ = {
+		46EB2E00000290 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E000002A0 /* Pods-StuffFriendsSay-umbrella.h in Headers */,
+				46EB2E00000360 /* Pods-StuffFriendsSay-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,17 +248,18 @@
 /* Begin PBXNativeTarget section */
 		0AE1DC7D650F0AE912ABD32A13789F47 /* Pods-StuffFriendsSay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E00000190 /* Build configuration list for PBXNativeTarget "Pods-StuffFriendsSay" */;
+			buildConfigurationList = 46EB2E00000250 /* Build configuration list for PBXNativeTarget "Pods-StuffFriendsSay" */;
 			buildPhases = (
-				46EB2E000001D0 /* Headers */,
-				46EB2E000001E0 /* Sources */,
-				46EB2E000001F0 /* Frameworks */,
-				46EB2E00000200 /* Resources */,
+				46EB2E00000290 /* Headers */,
+				46EB2E000002A0 /* Sources */,
+				46EB2E000002B0 /* Frameworks */,
+				46EB2E000002C0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				46EB2E00000320 /* PBXTargetDependency */,
+				46EB2E00000410 /* PBXTargetDependency */,
+				46EB2E00000430 /* PBXTargetDependency */,
 			);
 			name = "Pods-StuffFriendsSay";
 			productName = "Pods-StuffFriendsSay";
@@ -225,14 +288,15 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C9B77BE0B53297768472F8258C3E6A7B /* platforms */,
+				F62FA2A50D3BBA60BBC43BE9E029EFBA /* goodbyes */,
+				9CB2139A04AA5C8FF48BC1A7FFD33C39 /* greetings */,
 				0AE1DC7D650F0AE912ABD32A13789F47 /* Pods-StuffFriendsSay */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		46EB2E00000200 /* Resources */ = {
+		46EB2E000002C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -242,22 +306,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		46EB2E000002F0 /* [CP-User] Build platforms */ = {
+		46EB2E000003C0 /* [CP-User] Build goodbyes */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			name = "[CP-User] Build platforms";
+			name = "[CP-User] Build goodbyes";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../gradlew\" -p \"$REPO_ROOT\" :components:platforms:syncFramework                     -Pkotlin.native.cocoapods.target=$KOTLIN_TARGET                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION                     -Pkotlin.native.cocoapods.cflags=\"$OTHER_CFLAGS\"                     -Pkotlin.native.cocoapods.paths.headers=\"$HEADER_SEARCH_PATHS\"                     -Pkotlin.native.cocoapods.paths.frameworks=\"$FRAMEWORK_SEARCH_PATHS\"\n";
+			shellScript = "                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../gradlew\" -p \"$REPO_ROOT\" :components:goodbyes:syncFramework                     -Pkotlin.native.cocoapods.target=$KOTLIN_TARGET                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION                     -Pkotlin.native.cocoapods.cflags=\"$OTHER_CFLAGS\"                     -Pkotlin.native.cocoapods.paths.headers=\"$HEADER_SEARCH_PATHS\"                     -Pkotlin.native.cocoapods.paths.frameworks=\"$FRAMEWORK_SEARCH_PATHS\"\n";
 		};
-		46EB2E00000300 /* [CP-User] Touch platforms.framework */ = {
+		46EB2E000003D0 /* [CP-User] Touch goodbyes.framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			name = "[CP-User] Touch platforms.framework";
+			name = "[CP-User] Touch goodbyes.framework";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find \"${SRCROOT}\" -type f -name *frameworks.sh -exec bash -c \"touch \\\"{}\\\"\" \\;";
+		};
+		46EB2E000003E0 /* [CP-User] Build greetings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Build greetings";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../gradlew\" -p \"$REPO_ROOT\" :components:greetings:syncFramework                     -Pkotlin.native.cocoapods.target=$KOTLIN_TARGET                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION                     -Pkotlin.native.cocoapods.cflags=\"$OTHER_CFLAGS\"                     -Pkotlin.native.cocoapods.paths.headers=\"$HEADER_SEARCH_PATHS\"                     -Pkotlin.native.cocoapods.paths.frameworks=\"$FRAMEWORK_SEARCH_PATHS\"\n";
+		};
+		46EB2E000003F0 /* [CP-User] Touch greetings.framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Touch greetings.framework";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "find \"${SRCROOT}\" -type f -name *frameworks.sh -exec bash -c \"touch \\\"{}\\\"\" \\;";
@@ -265,22 +349,28 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		46EB2E000001E0 /* Sources */ = {
+		46EB2E000002A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E000002E0 /* Pods-StuffFriendsSay-dummy.m in Sources */,
+				46EB2E000003B0 /* Pods-StuffFriendsSay-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		46EB2E00000320 /* PBXTargetDependency */ = {
+		46EB2E00000410 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = platforms;
-			target = C9B77BE0B53297768472F8258C3E6A7B /* platforms */;
-			targetProxy = 46EB2E00000310 /* PBXContainerItemProxy */;
+			name = goodbyes;
+			target = F62FA2A50D3BBA60BBC43BE9E029EFBA /* goodbyes */;
+			targetProxy = 46EB2E00000400 /* PBXContainerItemProxy */;
+		};
+		46EB2E00000430 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = greetings;
+			target = 9CB2139A04AA5C8FF48BC1A7FFD33C39 /* greetings */;
+			targetProxy = 46EB2E00000420 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -409,9 +499,9 @@
 			};
 			name = Release;
 		};
-		46EB2E00000130 /* Release */ = {
+		46EB2E00000180 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000170 /* platforms.release.xcconfig */;
+			baseConfigurationReference = 46EB2E000001C0 /* goodbyes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -426,9 +516,9 @@
 			};
 			name = Release;
 		};
-		46EB2E00000140 /* Debug */ = {
+		46EB2E00000190 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000160 /* platforms.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E000001B0 /* goodbyes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -442,9 +532,42 @@
 			};
 			name = Debug;
 		};
-		46EB2E000001A0 /* Release */ = {
+		46EB2E000001F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000250 /* Pods-StuffFriendsSay.release.xcconfig */;
+			baseConfigurationReference = 46EB2E00000230 /* greetings.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46EB2E00000200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46EB2E00000220 /* greetings.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46EB2E00000260 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46EB2E00000310 /* Pods-StuffFriendsSay.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -480,9 +603,9 @@
 			};
 			name = Release;
 		};
-		46EB2E000001B0 /* Debug */ = {
+		46EB2E00000270 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000260 /* Pods-StuffFriendsSay.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E00000320 /* Pods-StuffFriendsSay.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -529,20 +652,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E00000120 /* Build configuration list for PBXAggregateTarget "platforms" */ = {
+		46EB2E00000170 /* Build configuration list for PBXAggregateTarget "goodbyes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E00000140 /* Debug */,
-				46EB2E00000130 /* Release */,
+				46EB2E00000190 /* Debug */,
+				46EB2E00000180 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E00000190 /* Build configuration list for PBXNativeTarget "Pods-StuffFriendsSay" */ = {
+		46EB2E000001E0 /* Build configuration list for PBXAggregateTarget "greetings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E000001B0 /* Debug */,
-				46EB2E000001A0 /* Release */,
+				46EB2E00000200 /* Debug */,
+				46EB2E000001F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46EB2E00000250 /* Build configuration list for PBXNativeTarget "Pods-StuffFriendsSay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EB2E00000270 /* Debug */,
+				46EB2E00000260 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,18 +1,18 @@
 {
-  "name": "platforms",
+  "name": "greetings",
   "version": "1.0",
   "homepage": "https://github.com/mikegehard/stuffFriendsSay",
   "source": {
     "git": "Not Published",
-    "tag": "Cocoapods/platforms/1.0"
+    "tag": "Cocoapods/greetings/1.0"
   },
   "authors": "",
   "license": "",
-  "summary": "Platforms library for Stuff Friends Say",
+  "summary": "Greetings library for Stuff Friends Say",
   "static_framework": true,
-  "vendored_frameworks": "build/cocoapods/framework/platforms.framework",
+  "vendored_frameworks": "build/cocoapods/framework/greetings.framework",
   "libraries": "c++",
-  "module_name": "platforms_umbrella",
+  "module_name": "greetings_umbrella",
   "pod_target_xcconfig": {
     "KOTLIN_TARGET[sdk=iphonesimulator*]": "ios_x64",
     "KOTLIN_TARGET[sdk=iphoneos*]": "ios_arm",
@@ -24,13 +24,13 @@
   },
   "script_phases": [
     {
-      "name": "Build platforms",
+      "name": "Build greetings",
       "execution_position": "before_compile",
       "shell_path": "/bin/sh",
-      "script": "                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../gradlew\" -p \"$REPO_ROOT\" :components:platforms:syncFramework                     -Pkotlin.native.cocoapods.target=$KOTLIN_TARGET                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION                     -Pkotlin.native.cocoapods.cflags=\"$OTHER_CFLAGS\"                     -Pkotlin.native.cocoapods.paths.headers=\"$HEADER_SEARCH_PATHS\"                     -Pkotlin.native.cocoapods.paths.frameworks=\"$FRAMEWORK_SEARCH_PATHS\"\n"
+      "script": "                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../gradlew\" -p \"$REPO_ROOT\" :components:greetings:syncFramework                     -Pkotlin.native.cocoapods.target=$KOTLIN_TARGET                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION                     -Pkotlin.native.cocoapods.cflags=\"$OTHER_CFLAGS\"                     -Pkotlin.native.cocoapods.paths.headers=\"$HEADER_SEARCH_PATHS\"                     -Pkotlin.native.cocoapods.paths.frameworks=\"$FRAMEWORK_SEARCH_PATHS\"\n"
     },
     {
-      "name": "Touch platforms.framework",
+      "name": "Touch greetings.framework",
       "execution_position": "after_compile",
       "shell_path": "/bin/sh",
       "script": "find \"${SRCROOT}\" -type f -name *frameworks.sh -exec bash -c \"touch \\\"{}\\\"\" \\;"

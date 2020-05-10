@@ -172,6 +172,7 @@
 				FFC9F11F241809EB0032E0E1 /* Sources */,
 				FFC9F120241809EB0032E0E1 /* Frameworks */,
 				FFC9F121241809EB0032E0E1 /* Resources */,
+				066242DA870BBE37A73DE459 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +290,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		066242DA870BBE37A73DE459 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuffFriendsSay/Pods-StuffFriendsSay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuffFriendsSay/Pods-StuffFriendsSay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StuffFriendsSay/Pods-StuffFriendsSay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		15D928D4E980FE9CD5734CFE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
