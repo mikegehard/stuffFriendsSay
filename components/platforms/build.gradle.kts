@@ -3,10 +3,8 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 plugins {
     kotlin("multiplatform")
     // Need this to get frameworks to build
-//    kotlin("native.cocoapods")
     id("co.touchlab.native.cocoapods")
     id("com.android.library")
-//    id("co.touchlab.kotlinxcodesync")
 }
 
 android {
