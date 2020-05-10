@@ -1,0 +1,6 @@
+framework module Pods_StuffFriendsSay {
+  umbrella header "Pods-StuffFriendsSay-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -19,6 +19,13 @@ development will be done in Xcode.
 
 https://github.com/touchlab/KaMPKit/blob/master/docs/IOS_PROJ_INTEGRATION.md
 
+1. [Install rbenv](https://github.com/rbenv/rbenv#installation)
+2. Install a non-system ruby so you don't have the `sudo gem install`:
+   ```
+   rbenv install 2.7.1
+   ```
+3. Install cocoapods via `gem install cocoapods`.
+
 
 ## Autoreload in Ktor (currently broken)  
 

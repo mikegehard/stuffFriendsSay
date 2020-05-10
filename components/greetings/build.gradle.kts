@@ -10,7 +10,7 @@ kotlin {
     version = "1.0"
 
     sourceSets["commonMain"].dependencies {
-        implementation(project(":components:messages"))
+        implementation(project(":components:platforms"))
         implementation(kotlin("stdlib", Versions.kotlin))
     }
 }

@@ -7,10 +7,11 @@
 //
 
 import SwiftUI
+import platforms
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text("Hello, from \(Platform().name)")
     }
 }
 

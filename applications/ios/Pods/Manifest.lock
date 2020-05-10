@@ -1,0 +1,16 @@
+PODS:
+  - platforms (1.0)
+
+DEPENDENCIES:
+  - platforms (from `../../components/platforms`)
+
+EXTERNAL SOURCES:
+  platforms:
+    :path: "../../components/platforms"
+
+SPEC CHECKSUMS:
+  platforms: 61da56c3d150463fc1cdb22f4e9153fea6218634
+
+PODFILE CHECKSUM: c4082f1ddfb6d3fad8f8feb0b4a56dd5859aa47d
+
+COCOAPODS: 1.9.1

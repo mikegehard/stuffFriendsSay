@@ -6,4 +6,5 @@ object Versions {
     const val shadowjar = "5.2.0"
     const val androidx = "1.1.0"
     const val bintrayPlugin = "1.8.5"
+    const val cocoapodsextPlugin = "0.9"
 }
